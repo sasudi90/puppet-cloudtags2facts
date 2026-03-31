@@ -1,0 +1,2 @@
+class cloudtags2facts {
+}
