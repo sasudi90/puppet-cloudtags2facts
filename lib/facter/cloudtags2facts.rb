@@ -116,7 +116,6 @@ def set_fact(name, value)
 end
 
 def read_external_tags
-  # Lees external facts bestand als fallback voor DB instances zonder cloud tags
   os_fact = Facter.fact('os')
   os_family = if os_fact.nil? || os_fact.value.nil?
                 nil
